@@ -1289,9 +1289,15 @@
         }
       }
 
-      document.getElementById("signUpButton").addEventListener("click", function () {
-         alert("Account successfully created! Please login 😊");
-      });
+      const signupButton = document.getElementById('signupButton');
+      const signupMessage = document.getElementById('signupMessage');
+
+// Add a click event listener to the button
+     signupButton.addEventListener('click', () => {
+    // Set the message and make it visible
+     signupMessage.textContent = "Account successfully created! Please Login 😊";
+     signupMessage.style.display = "block";
+     });
 
       function signUp() {
         const email = document.getElementById("signup-email").value;
