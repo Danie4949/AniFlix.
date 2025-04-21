@@ -722,7 +722,7 @@
             </div>
 
 
-            <button type="submit" id="signUpButton" >Sign Up</button>
+            <button type="submit" >Sign Up</button>
             <p style="text-align: center; margin-top: 10px">
               Already have an account?
               <a href="#" onclick="showLoginFromSignup()" style="color: #9147ff">Log in</a>
@@ -1287,16 +1287,6 @@
           }
         }
       }
-
-      const signupButton = document.getElementById('signupButton');
-      const signupMessage = document.getElementById('signupMessage');
-
-// Add a click event listener to the button
-     signupButton.addEventListener('click', () => {
-    // Set the message and make it visible
-     signupMessage.textContent = "Account successfully created! Please Login 😊";
-     signupMessage.style.display = "block";
-     });
 
       function signUp() {
         const email = document.getElementById("signup-email").value;
